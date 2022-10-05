@@ -21,7 +21,6 @@ function App() {
 						<Route path={pageIndex.current_header} element={<Header />} />
 						<Route path={pageIndex.current_main} element={<Main />} />
 						<Route path={pageIndex.current_intro} element={<Intro />} />
-						<Route path={pageIndex.current_aboutMe} element={<AboutMe />} />
 						<Route path={pageIndex.current_skils} element={<Skills />} />
 						<Route path={pageIndex.current_study} element={<Study />} />
 						<Route path={pageIndex.current_project} element={<Project />} />

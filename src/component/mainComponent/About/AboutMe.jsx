@@ -11,7 +11,6 @@ function AboutMe() {
 
 	return (
 		<div id="aboutMe" styleName="aboutme">
-			<Menu />
 			<div styleName="text-box">
 				<div styleName="title">
 					<div styleName="title-box">

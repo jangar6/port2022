@@ -13,7 +13,6 @@ function Menu() {
 	return (
 		<div styleName="menu">
 			<Link styleName={`nav ${current === pageIndex.current_intro ? 'active' : ''}`} to={pageIndex.current_intro} />
-			<Link styleName={`nav ${current === pageIndex.current_aboutMe ? 'active' : ''}`} to={pageIndex.current_aboutMe} />
 			<Link styleName={`nav ${current === pageIndex.current_skils ? 'active' : ''}`} to={pageIndex.current_skils} />
 			<Link styleName={`nav ${current === pageIndex.current_study ? 'active' : ''}`} to={pageIndex.current_study} />
 			<Link styleName={`nav ${current === pageIndex.current_project ? 'active' : ''}`} to={pageIndex.current_project} />
