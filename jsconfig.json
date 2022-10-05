@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "commonjs",
+		"target": "es6",
+		"jsx": "react-jsx",
+		"paths": {
+			"@styles": ["./src/style/style.scss/*"],
+			"@var": ["./src/styzzle/_variable.scss"],
+			"@redux": ["./src/redux"]
+		}
+	},
+	"exclude": ["node_modules", "public", "build"]
+}

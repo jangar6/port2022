@@ -1,0 +1,116 @@
+@use '@style/mixin' as *;
+
+.skills {
+	position: relative;
+	@include flex;
+	@include alignItems;
+	justify-content: center;
+	width: 100%;
+	height: 300vh;
+	color: white;
+	background-color: black;
+
+	.text-box {
+		position: fixed;
+		left: 150px;
+		top: 150px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: -150px;
+			left: 300px;
+			width: 1px;
+			height: 100vh;
+			background-color: white;
+		}
+
+		.title {
+			width: 100%;
+			@include flex;
+			@include alignItems;
+			justify-content: center;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 6vmin;
+			color: white;
+		}
+	}
+
+	.image-box {
+		width: 100%;
+		height: 100%;
+		margin-left: 450px;
+
+		.sklis {
+			font-family: 'Inter';
+			margin-bottom: 50px;
+			font-size: 4vmin;
+			font-weight: bold;
+			color: white;
+		}
+		.group {
+			@include flex;
+			justify-content: space-between;
+		}
+		.skills-text {
+			@include flex(column);
+			height: 100%;
+			margin-left: 50px;
+			font-family: 'Inter';
+			font-size: 4vmin;
+			color: white;
+			p {
+				&:nth-child(1) {
+					padding-top: 20px;
+				}
+				&:nth-child(2) {
+					padding-top: 60px;
+				}
+				&:nth-child(3) {
+					padding-top: 60px;
+				}
+			}
+		}
+
+		.sklis-1 {
+			@include flex(column);
+			@include alignItems;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+
+			.skills-image {
+				width: 321.15px;
+				height: 595px;
+				@include bgOption('../../../style/image/skils1.png');
+				background-position: 0 -50px;
+			}
+		}
+		.skills-2 {
+			@include flex(column);
+			@include alignItems;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+			.skills-image {
+				width: 91px;
+				height: 302px;
+				@include bgOption('../../../style/image/skils2.png');
+			}
+		}
+		.skills-3 {
+			@include flex(column);
+			@include alignItems;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+			.skills-image {
+				width: 97px;
+				height: 198px;
+				@include bgOption('../../../style/image/skils3.png');
+			}
+		}
+	}
+}

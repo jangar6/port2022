@@ -1,0 +1,49 @@
+@use '@style/mixin' as *;
+
+.aboutme {
+	@include flex;
+	@include alignItems;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	// color: black;
+	// background-color: white;
+	color: white;
+	background-color: black;
+	.text-box {
+		width: 100%;
+		height: 100%;
+		padding: 150px;
+		.title {
+			width: 17vw;
+			height: 17vw;
+			min-height: 40vmin;
+			min-width: 40vmin;
+			@include flex(column);
+			@include alignItems;
+			justify-content: center;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 6vmin;
+
+			color: white;
+			@include bgOption('../../../style/image/border-background.png');
+			.title-box {
+				text-align: left;
+			}
+		}
+		.text {
+			margin: 50px 0;
+			font-family: 'NanumBarunpen';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 2.2vmin;
+		}
+	}
+	.right-bg {
+		width: 590px;
+		height: 100%;
+		@include bgOption('../../../style/image/right-background.png');
+	}
+}

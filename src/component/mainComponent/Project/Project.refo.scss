@@ -1,0 +1,66 @@
+@use '@style/mixin' as *;
+.projectRefo {
+	@include flex;
+	@include alignItems(flex-end);
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+	p.desc {
+		margin-top: 100px;
+		word-break: keep-all;
+		text-align: right;
+		font-size: 2vmin;
+	}
+
+	.test {
+		@include grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+	}
+
+	.text-box {
+		@include flex(column);
+		@include alignItems(flex-end);
+		justify-content: space-between;
+		width: 100%;
+		height: 70vh;
+	}
+	ul {
+		li {
+			@include flex;
+			justify-content: flex-end;
+			width: 100%;
+			text-align: right;
+			margin-bottom: 10px;
+			font-size: 2vmin;
+			p {
+				word-break: keep-all;
+			}
+
+			P:first-child {
+				width: 165px;
+				text-align-last: left;
+			}
+			p:last-child {
+				width: 360px;
+				padding-left: 10px;
+				border-left: 3px solid white;
+			}
+		}
+		a {
+			display: flex;
+			justify-content: flex-end;
+			width: 360px;
+			height: 24px;
+			padding-left: 10px;
+			border-left: 3px solid white;
+			text-align: right;
+			font-size: 2vmin;
+			color: white;
+			transition: color 0.3s;
+			&:hover {
+				color: orange;
+			}
+		}
+	}
+}

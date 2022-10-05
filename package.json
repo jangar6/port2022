@@ -1,0 +1,42 @@
+{
+	"name": "A-Reum::PORTFOLIO",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.16.1",
+		"@testing-library/react": "^12.1.2",
+		"@testing-library/user-event": "^13.5.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-redux": "^8.0.4",
+		"redux": "^4.2.0",
+		"redux-devtools-extension": "^2.13.9",
+		"web-vitals": "^2.1.3"
+	},
+	"scripts": {
+		"start": "webpack serve --mode development",
+		"build": "webpack --mode production",
+		"test": "react-scripts test"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.16.7",
+		"@babel/plugin-proposal-class-properties": "^7.16.7",
+		"@babel/plugin-transform-runtime": "^7.16.8",
+		"@babel/preset-env": "^7.16.8",
+		"@babel/preset-react": "^7.16.7",
+		"@dr.pogodin/babel-plugin-react-css-modules": "^6.6.0-rc.1",
+		"babel-loader": "^8.2.3",
+		"css-loader": "^6.5.1",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^5.5.0",
+		"postcss-scss": "^4.0.3",
+		"react-router-dom": "^6.4.0",
+		"react-scripts": "5.0.0",
+		"sass": "^1.49.0",
+		"sass-loader": "^12.4.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.66.0",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.7.3"
+	}
+}

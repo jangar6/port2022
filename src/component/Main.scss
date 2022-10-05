@@ -1,0 +1,26 @@
+// @use "@style/variable" as var;
+@use '@style/mixin' as *;
+
+.main {
+	// color: var.$pointColor;
+	width: 100%;
+	height: 100%;
+	color: white;
+	animation: ani-fadin 2s forwards;
+
+	.section {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transition: all 1s cubic-bezier(0.34, -0.6, 0.515, 1.57);
+	}
+
+	.black-box {
+		width: 100%;
+		height: 500px;
+		background-color: black;
+	}
+}
+
+#section-1 {
+}

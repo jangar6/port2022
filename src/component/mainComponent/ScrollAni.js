@@ -1,0 +1,31 @@
+import React from 'react';
+
+function ScrollAni() {
+	var mHtml = $('html');
+	var page = 1;
+
+	mHtml.animate({ scrollTop: 0 }, 10);
+	$(window).on('wheel', function (e) {
+		if (mHtml.is(':animated')) return;
+		if (e.originalEvent.deltaY > 0) {
+			if (page == 4) return;
+			page++;
+		} else if (e.originalEvent.deltaY < 0) {
+			if (page == 1) return;
+			page--;
+		}
+		var posTop = (page - 1) * $(window).height();
+		mHtml.animate({ scrollTop: posTop });
+	});
+
+	return (
+		<div>
+			<div class="section" id="section1"></div>
+			<div class="section" id="section2"></div>
+			<div class="section" id="section3"></div>
+			<div class="section" id="section4"></div>
+		</div>
+	);
+}
+
+export default ScrollAni;

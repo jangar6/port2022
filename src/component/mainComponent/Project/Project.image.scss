@@ -1,0 +1,110 @@
+@use '@style/mixin' as *;
+
+.image-box.pickgo {
+	@include flex(column);
+	@include alignItems(flex-start);
+	justify-content: space-between;
+	color: white;
+
+	.image {
+		width: 550px;
+		&:first-child {
+			width: 550px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-pickandgo1.png');
+		}
+		&:last-child {
+			width: 550px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-pickandgo2.png');
+		}
+	}
+}
+
+.image-box.port {
+	@include flex(column);
+	@include alignItems(flex-start);
+	justify-content: space-between;
+	color: white;
+	.image {
+		&:first-child {
+			width: 550px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-port.png');
+			margin-right: 10px;
+		}
+		&:last-child {
+			// position: relative;
+			// left: 14%;
+			// width: 450px;
+			// height: 300px;
+			// border-radius: 5px;
+			// @include bgOption('../../../style/image/project-megabox.png');
+
+			display: none;
+		}
+	}
+}
+.image-box.web {
+	@include flex(column);
+	@include alignItems(flex-start);
+	justify-content: space-between;
+	color: white;
+
+	.image {
+		&:first-child {
+			width: 450px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-web.png');
+			margin-right: 10px;
+		}
+		&:last-child {
+			position: relative;
+			left: 14%;
+			width: 450px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-megabox.png');
+		}
+	}
+}
+.image-box.b2b {
+	.image {
+		&:first-child {
+			width: 550px;
+			height: 470px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-b2b.png');
+			background-size: contain;
+		}
+		&:last-child {
+			display: none;
+		}
+	}
+}
+.image-box.effect {
+	@include flex(column);
+	@include alignItems(flex-start);
+	justify-content: space-between;
+	color: white;
+
+	.image {
+		&:first-child {
+			width: 550px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-slide.png');
+		}
+		&:last-child {
+			width: 550px;
+			height: 300px;
+
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-effect.png');
+		}
+	}
+}

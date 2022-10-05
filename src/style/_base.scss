@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#text {
+	user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+html {
+	font-size: 62.5%; // 기본 16px 의 62.5%인 10px로 지정;
+}
+body {
+	font-size: 1.5rem; // 10px*1.5 인 15px 적용
+}
+
+html,
+body {
+	height: auto;
+	box-sizing: border-box;
+	z-index: none;
+	font-family: 'NanumBarunpen', 'sans-serif';
+}
+body {
+	position: relative;
+	// background-color: #060c16;
+}
+p {
+	cursor: default;
+}
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+	list-style: none;
+	text-align: left;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: rgba(0, 0, 0, 0);
+	box-shadow: none;
+	cursor: pointer;
+}
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+
+address {
+	text-decoration: none;
+	font-style: normal;
+	text-transform: capitalize;
+}
+
+a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	text-decoration: none;
+	font-style: normal;
+	outline: none;
+	cursor: pointer;
+	color: white;
+}
+
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+textarea {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+	display: none;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+.disabled {
+	opacity: 0.65;
+	cursor: not-allowed !important;
+}
+em {
+	font-style: normal;
+}
+
+[data-test-id] {
+	margin: 0 !important;
+	div {
+		position: relative !important;
+	}
+}
+#text {
+	cursor: default;
+}

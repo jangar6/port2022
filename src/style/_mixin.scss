@@ -1,0 +1,43 @@
+@mixin bgOption($url: '/') {
+	background-image: url($url);
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+@mixin flex($direction: row) {
+	@each $prefix in -moz-, -o-, -webkit-, -ms-, '' {
+		display: #{$prefix}flex;
+	}
+	flex-direction: $direction;
+}
+
+@mixin grid($direction: row) {
+	@each $prefix in -moz-, -o-, -webkit-, -ms-, '' {
+		display: #{$prefix}grid;
+	}
+	flex-direction: $direction;
+}
+
+@mixin alignItems($direction: center) {
+	-moz-align-items: $direction;
+	-ms-align-items: $direction;
+	align-items: $direction;
+}
+
+@keyframes ani-fadin {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes ani-fadout {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

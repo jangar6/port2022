@@ -1,0 +1,101 @@
+@use '@style/mixin' as *;
+
+.header {
+	width: 100%;
+	height: 100vh;
+	@include flex(column);
+	@include alignItems;
+	@include bgOption('../style/image/header-background.png');
+	background-size: cover;
+
+	.contents {
+		width: 100%;
+		height: 100%;
+		@include flex;
+		@include alignItems;
+		justify-content: center;
+		.main-contents {
+			width: 100%;
+			height: 100%;
+			@include flex(column);
+			@include alignItems;
+			justify-content: center;
+			cursor: default;
+
+			h1 {
+				transform: translateY(-50px);
+				padding-bottom: 40px;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 6vmin;
+				color: #fff;
+				opacity: 0;
+				transition: all 0.8s;
+			}
+			p {
+				font-family: 'NanumBarunpen';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.2vmin;
+				color: #fff;
+			}
+			.title {
+				position: relative;
+				padding: 40px 0;
+				font-family: 'NanumBarunpen';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.7vmin;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 0px;
+					height: 3px;
+					background-color: #fff;
+					opacity: 0;
+					transition: all 0.8s;
+				}
+			}
+			.btn-about {
+				width: 16vmin;
+				height: 7vmin;
+				@include flex;
+				@include alignItems;
+				justify-content: center;
+				margin-top: 40px;
+				font-family: 'NanumBarunpen';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 1.8vmin;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				background-color: rgba(255, 255, 255, 0.3);
+				color: #fff;
+				border-radius: 50px;
+				border: 3px solid rgba(255, 255, 255, 0);
+				transition: all 0.5s;
+
+				&:hover {
+					border: 3px solid white;
+					background-color: rgba(255, 255, 255, 0);
+				}
+			}
+
+			&.open {
+				h1 {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+				.title:before {
+					opacity: 1;
+					width: 28vmin;
+				}
+			}
+		}
+	}
+}

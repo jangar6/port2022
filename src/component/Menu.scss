@@ -1,0 +1,29 @@
+$defaultColor: white;
+$activeColor: black;
+.menu {
+	position: fixed;
+	top: 50%;
+	left: 25px;
+	transform: translate(0%, -50%);
+	width: 100px;
+	z-index: 999;
+
+	.nav {
+		width: 2vmin;
+		height: 2vmin;
+		margin-bottom: 27px;
+		background-color: $defaultColor;
+		border-radius: 50%;
+		border: 3px solid rgba($color: $defaultColor, $alpha: 0);
+		transition: background-color 0.3s;
+
+		&.active,
+		&:hover {
+			background-color: rgba($color: $defaultColor, $alpha: 0);
+			border: 3px solid $defaultColor;
+		}
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

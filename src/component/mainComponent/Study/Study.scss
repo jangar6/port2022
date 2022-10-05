@@ -1,0 +1,149 @@
+@use '@style/mixin' as *;
+
+.study {
+	position: relative;
+	@include flex(column);
+	@include alignItems;
+	justify-content: space-between;
+	width: 100%;
+	height: 100vh;
+	padding: 150px;
+	color: white;
+
+	.title {
+		@include flex;
+		justify-content: flex-start;
+		width: 100%;
+		margin-bottom: 50px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 6vmin;
+		color: white;
+	}
+
+	.box {
+		@include flex;
+		@include alignItems;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+
+		.column {
+			width: 100%;
+			height: 100%;
+			margin-right: 3vmin;
+			&:last-child {
+				margin: 0;
+			}
+
+			.desc {
+				word-break: keep-all;
+				&:first-child {
+					text-align: center;
+					font-size: 2vmin;
+					padding-bottom: 10px;
+					border-bottom: 3px solid white;
+				}
+			}
+			.sub-desc {
+				word-break: keep-all;
+			}
+			.image-box {
+				position: relative;
+				@include flex(column);
+				@include alignItems;
+				justify-content: center;
+				width: 100%;
+				height: 250px;
+				margin: 10px 0;
+				border-radius: 5px;
+
+				&:hover {
+					.image {
+						&:after {
+							background-color: rgba($color: black, $alpha: 0.8);
+						}
+					}
+					.links {
+						opacity: 1;
+					}
+				}
+
+				.image {
+					position: absolute;
+					width: 100%;
+					height: 250px;
+					border-radius: 5px;
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						background-color: rgba($color: black, $alpha: 0);
+						transition: all 0.3s;
+					}
+
+					&.git {
+						@include bgOption('../../../style/image/stduy1.png');
+						background-position: center 0;
+						background-size: cover;
+					}
+					&.gitBook {
+						@include bgOption('../../../style/image/stduy2.png');
+						background-position: center 0;
+						background-size: cover;
+					}
+					&.figma {
+						@include bgOption('../../../style/image/stduy3.png');
+						background-position: center center;
+						background-size: cover;
+					}
+					&.tistory {
+						@include bgOption('../../../style/image/stduy5.png');
+						background-position: center center;
+						background-size: cover;
+					}
+				}
+				.links {
+					position: relative;
+					@include flex(column);
+					justify-content: space-between;
+					margin-bottom: 5px;
+					opacity: 0;
+					transition: all 0.3s;
+
+					a {
+						width: 80px;
+						text-align: center;
+						padding: 5px;
+						margin-bottom: 10px;
+						border: 2px solid white;
+						border-radius: 5px;
+						color: white;
+						background-color: rgba($color: white, $alpha: 0.5);
+						transition: all 0.3s;
+						&:last-child {
+							margin: 0;
+						}
+						&:hover {
+							border: 2px solid rgba($color: white, $alpha: 0);
+							color: black;
+							background-color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.study .box .column:nth-child(1) .image-box .links {
+	display: grid;
+	align-items: flex-start;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+	z-index: 1;
+}
