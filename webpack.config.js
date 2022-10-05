@@ -8,8 +8,8 @@ const sassRegex = /(\.module|.*)\.(scss|sass)$/; // sass, scss, module regex
 module.exports = (mode, options) => {
 	const entryPoints = {
 		App: {
-			path: './src/index.jsx',
-			outputHtml: 'index.html',
+			path: './index.jsx',
+			outputHtml: './index.html',
 			build: true,
 		},
 	};

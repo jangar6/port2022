@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Header from '../component/Header';
-import Main from '../component/Main';
-import Contact from '../component/Contact';
-import Intro from '../component/mainComponent/Intro/Intro';
-import AboutMe from '../component/mainComponent/About/AboutMe';
-import Skills from '../component/mainComponent/Skills/Skills';
-import Study from '../component/mainComponent/Study/Study';
-import Project from '../component/mainComponent/Project/Project';
+import Header from './src/component/Header';
+import Main from './src/component/Main';
+import Contact from './src/component/Contact';
+import Intro from './src/component/mainComponent/Intro/Intro';
+import AboutMe from './src/component/mainComponent/About/AboutMe';
+import Skills from './src/component/mainComponent/Skills/Skills';
+import Study from './src/component/mainComponent/Study/Study';
+import Project from './src/component/mainComponent/Project/Project';
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import { pageIndex } from '@redux/store/define/enum';
 
