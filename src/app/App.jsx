@@ -16,7 +16,7 @@ function App() {
 	return (
 		<div styleName="home">
 			<div styleName="contents">
-				<BrowserRouter>
+				<HashRouter>
 					<Routes>
 						<Route path={pageIndex.current_header} element={<Header />} />
 						<Route path={pageIndex.current_main} element={<Main />} />
@@ -25,7 +25,7 @@ function App() {
 						<Route path={pageIndex.current_study} element={<Study />} />
 						<Route path={pageIndex.current_project} element={<Project />} />
 					</Routes>
-				</BrowserRouter>
+				</HashRouter>
 				<Contact />
 			</div>
 		</div>
