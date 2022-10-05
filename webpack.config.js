@@ -26,7 +26,7 @@ module.exports = (mode, options) => {
 					new HtmlWebpackPlugin({
 						inject: true,
 						chunks: [key],
-						template: './template.html',
+						index: './index.html',
 						filename: value.outputHtml,
 					}),
 				);
