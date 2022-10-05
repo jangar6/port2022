@@ -8,7 +8,7 @@ const sassRegex = /(\.module|.*)\.(scss|sass)$/; // sass, scss, module regex
 module.exports = (mode, options) => {
 	const entryPoints = {
 		App: {
-			path: 'index.jsx',
+			path: './src/index.jsx',
 			outputHtml: 'index.html',
 			build: true,
 		},
@@ -26,7 +26,7 @@ module.exports = (mode, options) => {
 					new HtmlWebpackPlugin({
 						inject: true,
 						chunks: [key],
-						index: 'index.html',
+						index: './index.html',
 						filename: value.outputHtml,
 					}),
 				);
@@ -44,7 +44,7 @@ module.exports = (mode, options) => {
 			extensions: ['*', '.js', '.jsx'],
 			alias: {
 				'@style': path.resolve(__dirname, './src/style'),
-				'@Azpp': path.resolve(__dirname, './src/App.jsx'),
+				'@App': path.resolve(__dirname, './src/App.jsx'),
 				'@styles': path.resolve(__dirname, './src/style/style.scss'),
 				'@var': path.resolve(__dirname, './src/style/_variable.scss'),
 				'@redux': path.resolve(__dirname, './src/redux'),
