@@ -1,5 +1,5 @@
 {
-	"name": "A-Reum::PORTFOLIO",
+	"name": "PORTFOLIO",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -7,7 +7,6 @@
 		"@testing-library/react": "^12.1.2",
 		"@testing-library/user-event": "^13.5.0",
 		"autoprefixer": "10.4.5",
-		"gh-pages": "^4.0.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-redux": "^8.0.4",
@@ -32,6 +31,7 @@
 		"babel-loader": "^8.2.3",
 		"css-loader": "^6.5.1",
 		"file-loader": "^6.2.0",
+		"gh-pages": "^4.0.0",
 		"html-webpack-plugin": "^5.5.0",
 		"postcss-scss": "^4.0.3",
 		"react-router-dom": "^6.4.0",
