@@ -8,8 +8,8 @@ const sassRegex = /(\.module|.*)\.(scss|sass)$/; // sass, scss, module regex
 module.exports = (mode, options) => {
 	const entryPoints = {
 		App: {
-			path: './index.jsx',
-			outputHtml: './index.html',
+			path: 'index.jsx',
+			outputHtml: 'index.html',
 			build: true,
 		},
 	};
@@ -26,7 +26,7 @@ module.exports = (mode, options) => {
 					new HtmlWebpackPlugin({
 						inject: true,
 						chunks: [key],
-						index: './index.html',
+						index: 'index.html',
 						filename: value.outputHtml,
 					}),
 				);
