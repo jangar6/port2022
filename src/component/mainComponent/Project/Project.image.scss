@@ -37,14 +37,10 @@
 			margin-right: 10px;
 		}
 		&:last-child {
-			// position: relative;
-			// left: 14%;
-			// width: 450px;
-			// height: 300px;
-			// border-radius: 5px;
-			// @include bgOption('../../../style/image/project-megabox.png');
-
-			display: none;
+			width: 550px;
+			height: 300px;
+			border-radius: 5px;
+			@include bgOption('../../../style/image/project-port2.png');
 		}
 	}
 }

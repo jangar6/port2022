@@ -80,7 +80,7 @@ function Project() {
 							'‘twitch’라는 플랫폼에서 진행되는 ‘League of Legends’게임 중계 방송에서 twitch extension을 사용하여 코드르 띄우는 방식입니다. 간단한 빙고게임과 실시간 게임정보를 업데이트하여 차트로 시각화하여 보여주어 시청하는 고객에게 재미를 더해주는 컨텐츠 입니다.'
 						}
 						cont_1={'21.03 ~ 22.08 (계속 진행)'}
-						cont_2={'react, gitLab, javascript, sass, webpack ...'}
+						cont_2={'React, GitLab, Javascript, SASS, Webpack ...'}
 						cont_3={
 							<p>
 								1 ~ 3명 (시기에 따라 조정)
@@ -109,28 +109,24 @@ function Project() {
 				<div styleName="contents">
 					<ProjectRefo
 						imageClass={'port'}
-						desc={'port'}
+						desc={
+							'해당 프로젝트는 사실 SASS나 CSS를 사용할때 다른파일에서 서로 다른 파일을 import했을때 클레스네임이 겹치는 경우 UI/UX구조가 충돌나는 경우를 대비하기 위해 홀로 공부하던 내용을 기반으로 작성하였습니다. 때문에 클래스네임을 모듈화 하였고 기존 사용방법인 "className"이 아닌 "styleName"으로 사용합니다. 자세한 사용방법은 참고URL의 github를 확인해주세요. '
+						}
 						cont_1={'20.11 ~ 21.01'}
-						cont_2={'javascript, jQuery, css, git'}
+						cont_2={'React, Javascript, SASS, Webpack, Git...'}
 						cont_3={
 							<p>
 								1명
 								<br />
-								95%
+								100%
 							</p>
 						}
-						cont_4={<p>html과 css, script작성으로 다양한 슬라이드와 마우스 이펙트들을 직접 개발해보았습니다.</p>}
-						cont_5={'javascript로 작성한 것을 jQuery로 변환 혹은 반대로 변환하며 두 언어를 습득하는 과정이였습니다.'}
+						cont_4={<p>포트폴리오 제작 사이트로 기존 Style 문법을 커스텀 하여 변경하였습니다.</p>}
+						cont_5={'기획부터 디자인, 퍼블리싱, 개발등 처음부터 끝까지 혼자 해본 포트폴리오 제작으로 그동안 해온것들을 기록하였습니다.'}
 						cont_6={
 							<div>
-								<a href="https://jangar6.github.io/dothome1/effect/sliderEffect01-javascript.html" target="_blank" rel="noopener noreferrer">
-									SLIDE EFFECT SITE
-								</a>
-								<a href="https://jangar6.github.io/dothome1/effect/mouseEffect02-javascript.html" target="_blank" rel="noopener noreferrer">
-									MOUSE EFFECT SITE
-								</a>
-								<a href="https://github.com/jangar6/dothome1/tree/master/effect" target="_blank" rel="noopener noreferrer">
-									SLIDE & EFFECT GITHUB
+								<a href="https://github.com/jangar6/port2022" target="_blank" rel="noopener noreferrer">
+									PORTFOLIO SITE
 								</a>
 							</div>
 						}
