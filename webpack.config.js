@@ -107,6 +107,9 @@ module.exports = (mode, options) => {
 			host: 'localhost',
 			port: 8080,
 			// 시작페이지를 지정해 주는 부분
+			 historyApiFallback: {
+				index: "./public/index.html",
+			},
 		},
 		performance: {
 			hints: false,
