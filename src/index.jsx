@@ -7,11 +7,12 @@ import '@styles';
 
 const store = configureStore();
 
-ReactDOM.render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
-	document.getElementById('root'),
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<Provider store={store}>
+			<App />
+		</Provider>
+	</React.StrictMode>,
 );
 
 // https://portfolio2022-b2592.web.app/
