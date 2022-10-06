@@ -14,7 +14,7 @@ import './App.scss';
 
 function App() {
 	return (
-		<div styleName="home">
+		<div styleName="home" id="app">
 			<div styleName="contents">
 				<HashRouter>
 					<Routes>
